@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    overflow: hidden;
+    height: 550px;
+    width: 500px;
+}
+
+.img-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#slide:focus {
+    opacity: 0.7;
+}
+
+button {
+    border: none;
+    background-color: rebeccapurple;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 32%;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.90;
+}
+
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
